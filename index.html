@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlacementOwl</title>
+    <link rel="stylesheet" href="./custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress fixed-top">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" id="scrollProgress" role="progressbar" aria-label="Page scroll progress"></div>
+    </div>
+
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-none mb-4">
+        <div class="container-md">
+            <!-- Nav Brand -->
+            <a class="navbar-brand" href="#"><span id="logo">PlacementOwl</span></a>
+
+            <!-- Nav Menu Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="nav-toggler-text fs-6"><small>Menu</small></span>
+                <span class="navbar-toggler-icon fs-6"></span>
+            </button>
+
+            <!-- Nav Menu -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero"><img src="./assets/home.svg" class="fw-bold" alt="Home icon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#testionials">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="hero" class="my-4">
+        <div class="container-md ">
+            <div class="row justify-content-start">
+                <div class="col-md-6 text-start">
+                    <!-- Title -->
+                    <h1 class="display1">Real Company Projects.<br>Instantly Matched.<br>Zero Spreadsheets</h1>
+                    
+                    <!-- Description -->
+                    <p class="lead text-muted">PlacementOwl uses AI matching to instantly link students to vetted industry projects. Ditch the endless hunting and spreadsheets, start building your future today.</p>
+                    
+                    <!-- Sign Up Or Book Demo -->
+                    <div id="heroButton">
+                        <span class="text-center">
+                            <p class="lead fw-bold p-1 m-0 text-muted">For Students</p>
+                            <a href="#" class="btn btn-outline-secondary">Sign Up</a>
+                        </span>
+                        <span class="text-center">
+                            <p class="lead fw-bold p-1 m-0 text-muted">For Companies & Educators</p>
+                            <a href="#" class="btn btn-outline-secondary">Book Demo</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <img src="" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section -->
+        <section id="features" class="mgb-6">
+            <div class="container-md">
+                <!-- Section Heading -->
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center mb-5">
+                        <h2class="mt-5"> Simplify Placements, Maximize Impact</h2>
+                        <p class="lead text-muted">Our platform streamlines the entire work-based learning process for all users.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Intelligent Matching Engine -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body text-start p-4">
+                                <h5 class="card-title">Find projects that matter in seconds.</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Learn more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Dashboard -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body text-start p-4">
+                                <h5 class="card-title">Automate coordination, focus on results.</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Learn more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instant Palcement -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body text-start p-4">
+                                <h5 class="card-title">Work on real-world challenges with top companies.</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Learn more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+    <!-- Partners card slider -->
+
+    <!-- Testimonials Carousel -->
+    <section id="testimonials">
+        <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Sarah -->
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                        <blockquote class="blockquote mb-0">
+                            <p>
+                                Finding a relevant project used to be a draining process of applying everywhere and hearing nothing back. 
+                                With PlacementOwl, I got matched with an exciting data analytics project at a tech startup within 48 hours. 
+                                The experience was invaluable and it led directly to my first job offer! It really is 'seconds, not semesters' to get started.
+                            </p>
+                            <footer class="blockquote-footer">Sarah L., <cite title="Source Title">Computer Science Student, Matched with TechCorp</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Ben -->
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                    <blockquote class="blockquote mb-0">
+                        <p>
+                            PlacementOwl is a game-changer. 
+                            I went from endless scrolling through job boards to actively working on a real-world marketing campaign in less than a week. 
+                            The project taught me more than any textbook, and I have solid portfolio work to show for it
+                        </p>
+                        <footer class="blockquote-footer">Ben K., <cite title="Source Title">Business Major, Completed a Project with GreenPeak Marketing</cite></footer>
+                    </blockquote>
+                </div>
+
+                <!-- Emily -->
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>
+                        </p>
+                        <blockquote class="blockquote mb-0">
+                            <p>
+                                We needed specific skills for a short-term project and didn't have time for a lengthy recruitment process. 
+                                PlacementOwl delivered qualified student matches instantly. 
+                                We found a great team, they hit the ground running, and we'll definitely be using it for all future projects.
+                            </p>
+                            <footer class="blockquote-footer">Emily R., <cite title="Source Title">HR Director, Innovate Solutions Inc.</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container-md">
+            <!-- Pricing Header -->
+            <div class="row justify-content-center text-center my-5">
+                <div class="col-md-8">
+                    <h2>Start Matching in Minutes — Choose the Plan That Fits You</h2>
+                    <p class="lead text-muted">
+                    Flexible plans for <span class="fw-bold">students</span>, <span class="fw-bold">educators</span>, and <span class="fw-bold">organizations</span> ready to revolutionize placements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- category Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="companies-tab" data-bs-toggle="tab" data-bs-target="#companies" type="button" role="tab" aria-controls="companies" aria-selected="true">For Companies</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="educators-tab" data-bs-toggle="tab" data-bs-target="#educators" type="button" role="tab" aria-controls="educators" aria-selected="false">For Educators</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">For Students</button>
+                </li>
+            </ul>
+            
+            <!-- Price Toggler -->
+            <div class="container-sm">
+                <div  id="elementToHide" class="row justify-content-center">
+                    <div class="col-sm-3 pricing-toggle  pb-3">
+                        <label>Monthly</label>
+                        <div class="toggler-btn">
+                            <input type="checkbox" id="checkbox" class="checkbox" title="Toggle Between Monthly and Yearly Price">
+                            <label for="checkbox" class="sub" id="suv">
+                                <div class="circle"></div>
+                            </label>
+                        </div>
+                        <label>Yearly</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+                <!-- For Companies -->
+                <div class="tab-pane fade show active" id="companies" role="tabpanel" aria-labelledby="companies-tab">
+                    <div class="container-md">
+                        <div class="row g-4">
+                            <!-- Basic Plan -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Basic</h5>
+                                        <p class="text-muted"><small>Small startups and first- time users <br><br></small></p>
+                                        <p class="monthlyPrices card-subtitle mb-2 text-muted price"><span class="h1">$0</span>/month</p>
+                                        <p class="yearlyPrices card-subtitle mb-2 text-muted price-section visually-hidden"><span class="h1">$0</span>/yearly</p>
+                                        <div class="text-center">
+                                            <a href="#companies" class="btn btn-secondary px-5 bg-dark">Free Access</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <p class="fw-bold">Featured</p>
+                                            <ul class="customList">
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>List 1 active project at a time</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Instant Student Matching</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Basic Project Management Tools</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Smart project templates</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Community support</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Standard in-platform communication</small></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Proffessional Plan with 'Most Popular' -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card popular shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Professional</h5>
+                                        <p class="text-light"><small>Growing businesses and regular project needs</small></p>
+                                        <p class="monthlyPrices card-subtitle mb-2 text-light price"><span class="h1">$299</span>/month</p>
+                                        <p class="yearlyPrices card-subtitle mb-2 text-light price-section visually-hidden"><span class="h1">$2,900</span>/yearly</p>
+                                        <div class="text-center">
+                                            <a href="#companies" class="btn btn-secondary px-5 bg-dark">Get Started</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <p class="fw-bold">Featured</p>
+                                            <ul class="customList">
+                                                <li><i class="bi bi-check-lg p-2"></i><small>All basic Features</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>10 active listings</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Branded company profile</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Advanced matching filters</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Collaborative team seats</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Interview scheduling tools</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Advanced analytics</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>AI recommendations for project briefs</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Priority email & chat support</small></li>
+                                            </ul>
+                                        </p>
+                                        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                          Most Popular
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Enterprise Plan -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Enterprise</h5>
+                                        <p class="text-muted"><small>Large corporations with ongoing talent pipelines</small></p>
+                                        <p class="card-subtitle mb-2 text-muted"><span class="h2">Custom Pricing</span></p>
+                                        <div class="text-center">
+                                            <a href="#companies" class="btn btn-secondary px-5 bg-dark">Get Started</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <p class="fw-bold">Featured</p>
+                                            <ul class="customList">
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>All basic Features</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Unlimited listings & user seats</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Custom API access & ATS/HRIS integration</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Dedicated success manager & onboarding support</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>SLA-backed uptime & security compliance reports</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Performance tracking dashboards</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>White-labeling options</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>DEI & compliance reporting tools</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Talent pool for recurring hires</small></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- For Educators -->
+                <div class="tab-pane fade" id="educators" role="tabpanel" aria-labelledby="educators-tab">
+                    <div class="container-md">
+                        <div class="row g-4">
+                            <!-- Campus Basic Plan -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Campus Basic</h5>
+                                        <p class="text-muted"><small>For smaller programs managing up to 100 students.<br><br></small></p>
+                                        <p class="monthlyPrices card-subtitle mb-2 text-muted price"><span class="h1">$0</span>/month</p>
+                                        <p class="yearlyPrices card-subtitle mb-2 text-muted price-section visually-hidden"><span class="h1">$0</span>/yearly</p>
+                                        <div class="text-center">
+                                            <a href="#educators" class="btn btn-secondary px-5 bg-dark">Free Access</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <p class="fw-bold">Featured</p>
+                                            <ul class="customList">
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Placement dashboard</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>100 student profiles</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Student–project matching</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Basic company directory access</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Internship tracking</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Exportable reports</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Email support</small></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Campus Plus Plan with 'Most Popular' -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card popular shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Campus Plus</h5>
+                                        <p class="text-light"><small>Growing businesses and regular project needs</small></p>
+                                        <p class="monthlyPrices card-subtitle mb-2 text-light price"><span class="h1">$199</span>/month</p>
+                                        <p class="yearlyPrices card-subtitle mb-2 text-light price-section visually-hidden"><span class="h1">$1,990</span>/yearly</p>
+                                        <div class="text-center">
+                                            <a href="#educators" class="btn btn-secondary px-5 bg-dark">Get Started</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <p class="fw-bold">Featured</p>
+                                            <ul class="customList">
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>All basic Features</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Up to 500 students</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Multiple program management</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>White-labeled student & employer portals</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Advanced analytics</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Company performance insights</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Automated project approval workflows</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Custom reporting templates</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Faculty collaboration tools</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Priority support</small></li>
+                                            </ul>
+                                        </p>
+                                        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+                                          Most Popular
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Campus Enterprise Plan -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Campus Enterprise</h5>
+                                        <p class="text-muted"><small>Large corporations with ongoing talent pipelines</small></p>
+                                        <p class="card-subtitle mb-2 text-muted"><span class="h2">Custom Pricing</span></p>
+                                        <div class="text-center">
+                                            <a href="#educators" class="btn btn-secondary px-5 bg-dark">Get Started</a>
+                                        </div>
+                                        <p class="card-text">
+                                            <p class="fw-bold">Featured</p>
+                                            <ul class="customList">
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>All basic Features</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Unlimited student accounts</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>API + LMS integration</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>SSO & data security compliance</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Real-time dashboards for department heads</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Custom placement workflows</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Dedicated customer success team</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Custom analytics portal</small></li>
+                                                <li><i class="bi bi-check-lg pe-2"></i><small>Branded multi-campus environment</small></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- For Students - Free -->
+                <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
+                    <div class="container-md">
+                        <div class="row g-4 justify-content-center pt-5">
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card popular shadow-sm h-100 border-0">
+                                    <div class="card-body text-start p-4">
+                                        <h5 class="card-title">Verified Students</h5>
+                                        <p class="text-light"><small>Students who have completed the verification process</small></p>
+                                        <p class="card-subtitle mb-2 text-light"><span class="h2">FREE</span></p>
+                                        <div class="text-center">
+                                            <a href="#students" class="btn btn-secondary px-5 bg-dark">Free Access</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>     
+        </div>
+           
+    </section>
+    
+    <!-- FAQ -->
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 py-5">
+        <div class="container-md">
+            <!-- FAQ Header -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="text-muted">Everything you need to know about using PlacementOwl.</p>
+                </div>
+            </div>
+
+            <!-- Category Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="faqTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="students-faq-tab" data-bs-toggle="tab" data-bs-target="#students-faq" type="button" role="tab" aria-controls="students-faq" aria-selected="true">Students</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="companies-faq-tab" data-bs-toggle="tab" data-bs-target="#companies-faq" type="button" role="tab" aria-controls="companies-faq" aria-selected="false">Companies</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="educators-faq-tab" data-bs-toggle="tab" data-bs-target="#educators-faq" type="button" role="tab" aria-controls="educators-faq" aria-selected="false">Educators</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="faqTabsContent">
+            <!-- Students FAQ -->
+            <div class="tab-pane fade show active" id="students-faq" role="tabpanel" aria-labelledby="students-faq-tab">
+                <div class="accordion" id="studentsAccordion">
+                    <!-- Student Matching -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="s1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStudentMatching" aria-expanded="true" aria-controls="collapseStudentMatching">
+                                How does PlacementOwl find matching projects for me?
+                            </button>
+                        </h2>
+                        <div id="collapseStudentMatching" class="accordion-collapse collapse show" aria-labelledby="Student Matching" data-bs-parent="#studentsAccordion">
+                            <div class="accordion-body">
+                                Our AI engine matches you to projects based on your skills, goals, and academic background. You’ll receive instant recommendations for real company projects that fit your learning path.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Pricing -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="s2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStudentPricing" aria-expanded="false" aria-controls="collapseStudentPricing">
+                                Is PlacementOwl free for students?
+                            </button>
+                        </h2>
+                        <div id="collapseStudentPricing" class="accordion-collapse collapse" aria-labelledby="Student Pricing" data-bs-parent="#studentsAccordion">
+                            <div class="accordion-body">
+                                Yes! Verified students get full access for free. You can explore projects, apply directly, and track your experience progress without any hidden costs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Credit -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="s3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAcademicCredit" aria-expanded="false" aria-controls="collapseAcademicCredit">
+                                Can I earn credit or experience hours through PlacementOwl?
+                            </button>
+                        </h2>
+                        <div id="collapseAcademicCredit" class="accordion-collapse collapse" aria-labelledby="Academic Credit" data-bs-parent="#studentsAccordion">
+                            <div class="accordion-body">
+                                Many partnered educators integrate PlacementOwl projects directly into coursework for academic credit or verified hours. Check with your program coordinator to confirm eligibility.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Companies FAQ -->
+            <div class="tab-pane fade" id="companies-faq" role="tabpanel" aria-labelledby="companies-faq-tab">
+                <div class="accordion" id="companiesAccordion">
+                    <!-- Eligible Companies -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="c1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEligibleCompanies" aria-expanded="true" aria-controls="collapseEligibleCompanies">
+                                What kinds of companies can post projects?
+                            </button>
+                        </h2>
+                        <div id="collapseEligibleCompanies" class="accordion-collapse collapse show" aria-labelledby="Elligible Compnaies" data-bs-parent="#companiesAccordion">
+                            <div class="accordion-body">
+                                Any verified organization — from startups to large enterprises — can post short-term or semester-long projects. PlacementOwl ensures all listings align with real learning outcomes.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Vetting -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="c2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStudentVetting" aria-expanded="false" aria-controls="collapseStudentVetting">
+                                How are students vetted before being matched?
+                            </button>
+                        </h2>
+                        <div id="collapseStudentVetting" class="accordion-collapse collapse" aria-labelledby="Student Vetting" data-bs-parent="#companiesAccordion">
+                            <div class="accordion-body">
+                                All students complete a verification process that includes skill tagging, portfolio checks, and educator approval when applicable. Companies receive only curated, qualified matches.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HR Tools Integration -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="c3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHRToolsIntegration" aria-expanded="false" aria-controls="collapseHRToolsIntegration">
+                                Can PlacementOwl integrate with our HR tools?
+                            </button>
+                        </h2>
+                        <div id="collapseHRToolsIntegration" class="accordion-collapse collapse" aria-labelledby="HR Tools Integration" data-bs-parent="#companiesAccordion">
+                            <div class="accordion-body">
+                                Yes, Pro and Enterprise plans include ATS and HRIS integrations, so you can sync candidate information, manage projects, and track outcomes directly from your internal systems.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educators FAQ -->
+            <div class="tab-pane fade" id="educators-faq" role="tabpanel" aria-labelledby="educators-faq-tab">
+                <div class="accordion" id="educatorsAccordion">
+                    <!-- Replacing Spreadsheets -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="e1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReplacingSpreadsheets" aria-expanded="true" aria-controls="collapseReplacingSpreadsheets">
+                                How does PlacementOwl replace spreadsheets?
+                            </button>
+                        </h2>
+                        <div id="collapseReplacingSpreadsheets" class="accordion-collapse collapse show" aria-labelledby="Replacing Spreadsheets" data-bs-parent="#educatorsAccordion">
+                            <div class="accordion-body">
+                                PlacementOwl provides a central dashboard to track every student, project, and company in real time — no manual data entry, no emails, no spreadsheets.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Managing Programs -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="e2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseManagingPrograms" aria-expanded="false" aria-controls="collapseManagingPrograms">
+                                Can we manage multiple cohorts or programs?
+                            </button>
+                        </h2>
+                        <div id="collapseManagingPrograms" class="accordion-collapse collapse" aria-labelledby="Managing Programs" data-bs-parent="#educatorsAccordion">
+                            <div class="accordion-body">
+                                Absolutely. Campus Plus and Enterprise tiers support multiple cohorts, semesters, and departments — with filtering and analytics for each program.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Compliance -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="e3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDataCompliance" aria-expanded="false" aria-controls="collapseDataCompliance">
+                                Is data compliant with DPPA, 2019 and DPP Regulations, 2021?
+                            </button>
+                        </h2>
+                        <div id="collapseDataCompliance" class="accordion-collapse collapse" aria-labelledby="Data Compliance" data-bs-parent="#educatorsAccordion">
+                            <div class="accordion-body">
+                                Yes. PlacementOwl follows strict DPPA, 2019 and DPP Regulations, 2021 compliance for all data storage and sharing, ensuring student privacy and institutional data security.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container-md">
+            <!-- Contact Title -->
+            <div class="row justify-content-center">
+                <div class="row justify-content-center mb-5 text-center">
+                    <div class="col-lg-8">
+                        <h2>Let’s Get You Connected</h2>
+                        <p class="text-muted">
+                            Whether you’re a student, educator, or company — we’d love to help you start matching in minutes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="p-4 h-100 bg-white shadow-sm rounded-3">
+                    <h5 class="fw-semibold mb-3">Reach Us Directly</h5>
+                    <p class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> hello@placementowl.com</p>
+                    <p class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p class="mb-0"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>HQ:</strong> San Francisco, CA</p>
+
+                    <hr class="my-4">
+                    <h6 class="fw-semibold">Follow Us</h6>
+                    <div class="d-flex gap-3 mt-2">
+                        <a href="#" class="text-secondary"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-twitter-x fs-4"></i></a>
+                        <a href="#" class="text-secondary"><i class="bi bi-instagram fs-4"></i></a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="p-4 bg-white shadow-sm rounded-3">
+                    <form>
+                        <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="role" class="form-label">I am a...</label>
+                            <select id="role" class="form-select">
+                            <option selected disabled>Select your role</option>
+                            <option>Student</option>
+                            <option>Educator / Program Manager</option>
+                            <option>Company / Recruiter</option>
+                            <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="How can we help?" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us a bit about your request..." required></textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-primary px-4">Send Message</button>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+        <!-- Copyright and Social media handles -->
+
+        <!-- Product -->
+
+        <!-- Resources -->
+
+        <!-- Company -->
+
+        <!-- Help -->
+
+        <!-- Disclaimer: For  -->
+
+    <!-- For Bootstrap Test -->
+        <!-- <button type="button" class="btn btn-primary position-relative">
+            Profile
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+            </span>
+        </button> -->
+        <!-- <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <div>
+              An example alert with an icon
+            </div>
+        </div> -->
+        <!-- <button type="button" class="btn btn-primary position-relative">
+            Inbox
+        </button> -->
+
+          
+          <!-- <ul>
+            <li><a href="#tab1" class="tab-link" data-tab="tab1">Tab 1</a></li>
+            <li><a href="#tab2" class="tab-link" data-tab="tab2">Tab 2</a></li> <li><a href="#tab3" class="tab-link" data-tab="tab3">Tab 3</a></li>
+          </ul>
+          
+          <div id="tab1" class="tab-content active">Content for Tab 1.</div>
+          <div id="tab2" class="tab-content hidden">Content for Tab 2.</div>
+          <div id="tab3" class="tab-content hidden">Content for Tab 3.</div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./custom.js"></script>
+</body>
+</html>

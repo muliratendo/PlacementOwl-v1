@@ -1,0 +1,77 @@
+#logo {
+    font-family: "Audiowide", sans-serif;
+}
+
+#heroButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.customList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checkbox {
+    display: none;
+}
+
+.sub {
+    background: linear-gradient(
+        135deg,
+        rgba(163, 168, 240, 1) 0%,
+        rgba(105, 111, 221, 1) 100%
+    );
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+}
+
+.circle {
+    background-color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+}
+
+.checkbox:checked + .sub {
+    justify-content: end;
+}
+
+.pricing-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card.popular {
+    background: linear-gradient(
+        135deg,
+        rgba(163, 168, 240, 1) 0%,
+        rgba(105, 111, 221, 1) 100%
+    );
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progress {
+    z-index: 1050;
+    height: 4px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.progress-bar {
+    transition: width 0.25s ease-out;
+    width: 0%;
+    background-color: #1e90ff;
+}
+  
