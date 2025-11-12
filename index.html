@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlacementOwl</title>
-    <link rel="stylesheet" href="./custom.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/owl.svg">
+    <link rel="stylesheet" href="./assets/css/custom.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
-    <!-- Progress Bar -->
-    <div class="progress fixed-top">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" id="scrollProgress" role="progressbar" aria-label="Page scroll progress"></div>
-    </div>
-
-    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-none mb-4">
         <div class="container-md">
@@ -32,7 +27,7 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#hero"><img src="./assets/home.svg" class="fw-bold" alt="Home icon"></a>
+                        <a class="nav-link active" aria-current="page" href="#hero"><img src="./assets/images/home.svg" class="fw-bold" alt="Home icon"></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#features">Features</a>
@@ -77,8 +72,8 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-6 text-end">
-                    <img src="" alt="Hero Image">
+                <div class="col-md-6 text-end rounded-7">
+                    <img src="./assets/images/hero4.png" alt="Hero Image">
                 </div>
             </div>
         </div>
@@ -103,7 +98,7 @@
                             <div class="card-body text-start p-4">
                                 <h5 class="card-title">Find projects that matter in seconds.</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Learn more...</a>
+                                <a href="#" class="btn btn-outline-secondary">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -115,19 +110,19 @@
                             <div class="card-body text-start p-4">
                                 <h5 class="card-title">Automate coordination, focus on results.</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Learn more...</a>
+                                <a href="#" class="btn btn-outline-secondary">Learn more...</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Instant Palcement -->
+                    <!-- Instant Placement -->
                     <div class="col-md-4 col-lg-4">
                         <div class="card h-100 shadow-sm">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body text-start p-4">
-                                <h5 class="card-title">Work on real-world challenges with top companies.</h5>
+                                <h5 class="card-title">Work on real-world challenges.</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Learn more...</a>
+                                <a href="#" class="btn btn-outline-secondary">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -226,10 +221,10 @@
             <!-- category Tabs -->
             <ul class="nav nav-pills justify-content-center mb-4" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="companies-tab" data-bs-toggle="tab" data-bs-target="#companies" type="button" role="tab" aria-controls="companies" aria-selected="true">For Companies</button>
+                    <button class="nav-link btn btn-secondary active" id="companies-tab" data-bs-toggle="tab" data-bs-target="#companies" type="button" role="tab" aria-controls="companies" aria-selected="true">For Companies</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="educators-tab" data-bs-toggle="tab" data-bs-target="#educators" type="button" role="tab" aria-controls="educators" aria-selected="false">For Educators</button>
+                    <button class="nav-link btn btn-secondary" id="educators-tab" data-bs-toggle="tab" data-bs-target="#educators" type="button" role="tab" aria-controls="educators" aria-selected="false">For Educators</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">For Students</button>
@@ -465,7 +460,6 @@
            
     </section>
     
-    <!-- FAQ -->
     <!-- FAQ Section -->
     <section id="faq" class="py-5 py-5">
         <div class="container-md">
@@ -503,7 +497,8 @@
                         </h2>
                         <div id="collapseStudentMatching" class="accordion-collapse collapse show" aria-labelledby="Student Matching" data-bs-parent="#studentsAccordion">
                             <div class="accordion-body">
-                                Our AI engine matches you to projects based on your skills, goals, and academic background. You’ll receive instant recommendations for real company projects that fit your learning path.
+                                <p>Our AI engine matches you to projects based on your skills, goals, and academic background. You’ll receive instant recommendations for real company projects that fit your learning path.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -517,7 +512,8 @@
                         </h2>
                         <div id="collapseStudentPricing" class="accordion-collapse collapse" aria-labelledby="Student Pricing" data-bs-parent="#studentsAccordion">
                             <div class="accordion-body">
-                                Yes! Verified students get full access for free. You can explore projects, apply directly, and track your experience progress without any hidden costs.
+                                <p>Yes! Verified students get full access for free. You can explore projects, apply directly, and track your experience progress without any hidden costs.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -531,7 +527,8 @@
                         </h2>
                         <div id="collapseAcademicCredit" class="accordion-collapse collapse" aria-labelledby="Academic Credit" data-bs-parent="#studentsAccordion">
                             <div class="accordion-body">
-                                Many partnered educators integrate PlacementOwl projects directly into coursework for academic credit or verified hours. Check with your program coordinator to confirm eligibility.
+                                <p>Many partnered educators integrate PlacementOwl projects directly into coursework for academic credit or verified hours. Check with your program coordinator to confirm eligibility.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -550,7 +547,8 @@
                         </h2>
                         <div id="collapseEligibleCompanies" class="accordion-collapse collapse show" aria-labelledby="Elligible Compnaies" data-bs-parent="#companiesAccordion">
                             <div class="accordion-body">
-                                Any verified organization — from startups to large enterprises — can post short-term or semester-long projects. PlacementOwl ensures all listings align with real learning outcomes.
+                                <p>Any verified organization — from startups to large enterprises — can post short-term or semester-long projects. PlacementOwl ensures all listings align with real learning outcomes.</p>
+                                <a href="#" class="btn btn-outline-secondary">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -564,7 +562,8 @@
                         </h2>
                         <div id="collapseStudentVetting" class="accordion-collapse collapse" aria-labelledby="Student Vetting" data-bs-parent="#companiesAccordion">
                             <div class="accordion-body">
-                                All students complete a verification process that includes skill tagging, portfolio checks, and educator approval when applicable. Companies receive only curated, qualified matches.
+                                <p>All students complete a verification process that includes skill tagging, portfolio checks, and educator approval when applicable. Companies receive only curated, qualified matches.</p>
+                                <a href="#" class="btn btn-outline-secondary">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -578,7 +577,8 @@
                         </h2>
                         <div id="collapseHRToolsIntegration" class="accordion-collapse collapse" aria-labelledby="HR Tools Integration" data-bs-parent="#companiesAccordion">
                             <div class="accordion-body">
-                                Yes, Pro and Enterprise plans include ATS and HRIS integrations, so you can sync candidate information, manage projects, and track outcomes directly from your internal systems.
+                                <p>Yes, Pro and Enterprise plans include ATS and HRIS integrations, so you can sync candidate information, manage projects, and track outcomes directly from your internal systems.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -597,7 +597,8 @@
                         </h2>
                         <div id="collapseReplacingSpreadsheets" class="accordion-collapse collapse show" aria-labelledby="Replacing Spreadsheets" data-bs-parent="#educatorsAccordion">
                             <div class="accordion-body">
-                                PlacementOwl provides a central dashboard to track every student, project, and company in real time — no manual data entry, no emails, no spreadsheets.
+                                <p>PlacementOwl provides a central dashboard to track every student, project, and company in real time — no manual data entry, no emails, no spreadsheets.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -611,7 +612,8 @@
                         </h2>
                         <div id="collapseManagingPrograms" class="accordion-collapse collapse" aria-labelledby="Managing Programs" data-bs-parent="#educatorsAccordion">
                             <div class="accordion-body">
-                                Absolutely. Campus Plus and Enterprise tiers support multiple cohorts, semesters, and departments — with filtering and analytics for each program.
+                                <p>Absolutely. Campus Plus and Enterprise tiers support multiple cohorts, semesters, and departments — with filtering and analytics for each program.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -625,7 +627,8 @@
                         </h2>
                         <div id="collapseDataCompliance" class="accordion-collapse collapse" aria-labelledby="Data Compliance" data-bs-parent="#educatorsAccordion">
                             <div class="accordion-body">
-                                Yes. PlacementOwl follows strict DPPA, 2019 and DPP Regulations, 2021 compliance for all data storage and sharing, ensuring student privacy and institutional data security.
+                                <p>Yes. PlacementOwl follows strict DPPA, 2019 and DPP Regulations, 2021 compliance for all data storage and sharing, ensuring student privacy and institutional data security.</p>
+                                <a href="#" class="btn btn-outline-secondary h-20">Learn more...</a>
                             </div>
                         </div>
                     </div>
@@ -653,57 +656,57 @@
                 <!-- Contact Info -->
                 <div class="col-lg-4">
                     <div class="p-4 h-100 bg-white shadow-sm rounded-3">
-                    <h5 class="fw-semibold mb-3">Reach Us Directly</h5>
-                    <p class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> hello@placementowl.com</p>
-                    <p class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> +1 (555) 123-4567</p>
-                    <p class="mb-0"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>HQ:</strong> San Francisco, CA</p>
+                        <h5 class="fw-semibold mb-3">Reach Us Directly</h5>
+                        <p class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> hello@placementowl.com</p>
+                        <p class="mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> +256 (XXX) XXX XXX</p>
+                        <p class="mb-0"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>HQ:</strong> Kampala, Uganda</p>
 
-                    <hr class="my-4">
-                    <h6 class="fw-semibold">Follow Us</h6>
-                    <div class="d-flex gap-3 mt-2">
-                        <a href="#" class="text-secondary"><i class="bi bi-linkedin fs-4"></i></a>
-                        <a href="#" class="text-secondary"><i class="bi bi-twitter-x fs-4"></i></a>
-                        <a href="#" class="text-secondary"><i class="bi bi-instagram fs-4"></i></a>
-                    </div>
+                        <hr class="my-4">
+                        <h6 class="fw-semibold">Follow Us</h6>
+                        <div class="d-flex gap-3 mt-2">
+                            <a href="#" class="text-secondary" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-4"></i></a>
+                            <a href="#" class="text-secondary" aria-label="Follow us on Twitter"><i class="bi bi-twitter-x fs-4"></i></a>
+                            <a href="#" class="text-secondary" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-4"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
                 <div class="col-lg-8">
                     <div class="p-4 bg-white shadow-sm rounded-3">
-                    <form>
-                        <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="role" class="form-label">I am a...</label>
-                            <select id="role" class="form-select">
-                            <option selected disabled>Select your role</option>
-                            <option>Student</option>
-                            <option>Educator / Program Manager</option>
-                            <option>Company / Recruiter</option>
-                            <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject" placeholder="How can we help?" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us a bit about your request..." required></textarea>
-                        </div>
-                        <div class="col-12 text-end">
-                            <button type="submit" class="btn btn-primary px-4">Send Message</button>
-                        </div>
-                        </div>
-                    </form>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="role" class="form-label">I am a...</label>
+                                    <select id="role" class="form-select">
+                                        <option selected disabled>Select your role</option>
+                                        <option>Student</option>
+                                        <option>Educator / Program Manager</option>
+                                        <option>Company / Recruiter</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="How can we help?" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Tell us a bit about your request..." required></textarea>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-outline-secondary px-4">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -712,48 +715,86 @@
     
     
     <!-- Footer -->
-        <!-- Copyright and Social media handles -->
 
-        <!-- Product -->
 
-        <!-- Resources -->
 
-        <!-- Company -->
 
-        <!-- Help -->
 
         <!-- Disclaimer: For  -->
-
-    <!-- For Bootstrap Test -->
-        <!-- <button type="button" class="btn btn-primary position-relative">
-            Profile
-            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-            <span class="visually-hidden">New alerts</span>
-            </span>
-        </button> -->
-        <!-- <div class="alert alert-primary d-flex align-items-center" role="alert">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
-              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-            </svg>
-            <div>
-              An example alert with an icon
+        <footer class="bg-dark text-white pt-5 pb-3">
+            <div class="container-md">
+                <div class="row g-4 mb-4">
+                    
+                    <!-- logo and Social media handles -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 id="logo" class="mb-3 text-white">PlacementOwl</h5>
+                        <p class="text-muted small">Real Company Projects. Instantly Matched. Zero Spreadsheets.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="text-secondary" aria-label="Follow us on LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+                            <a href="#" class="text-secondary" aria-label="Follow us on Twitter"><i class="bi bi-twitter-x fs-5"></i></a>
+                            <a href="#" class="text-secondary" aria-label="Follow us on Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product -->
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="fw-bold text-white mb-3">Product</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#hero" class="text-muted text-decoration-none small">Home</a></li>
+                            <li class="mb-2"><a href="#features" class="text-muted text-decoration-none small">Features</a></li>
+                            <li class="mb-2"><a href="#pricing" class="text-muted text-decoration-none small">Pricing</a></li>
+                            <li class="mb-2"><a href="#pricing" class="text-muted text-decoration-none small">Sign Up (Student)</a></li>
+                            <li class="mb-2"><a href="#pricing" class="text-muted text-decoration-none small">Book a Demo (Co./Edu.)</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Resources -->
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="fw-bold text-white mb-3">Resources</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#testimonials" class="text-muted text-decoration-none small">Testimonials</a></li>
+                            <li class="mb-2"><a href="#faq" class="text-muted text-decoration-none small">FAQ</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Careers</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Blog</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Help Center</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Company -->
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="fw-bold text-white mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#contact" class="text-muted text-decoration-none small">Contact Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Terms of Service</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Security</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Help -->
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="fw-bold text-white mb-3">Get In Touch</h6>
+                        <p class="mb-1 text-muted small"><i class="bi bi-envelope-fill me-2"></i>hello@placementowl.com</p>
+                        <p class="mb-1 text-muted small"><i class="bi bi-geo-alt-fill me-2"></i>Kampala, Uganda</p>
+                        <a href="#contact" class="btn btn-sm btn-outline-secondary mt-3">Book Demo</a>
+                    </div>
+                </div>
+        
+                <hr class="text-muted">
+                <!-- Copyright -->
+                <div class="row pt-3">
+                    <div class="col-12 text-center">
+                        <p class="text-muted small mb-1">
+                            &copy; <span id="currentYear"></span> PlacementOwl. All rights reserved.
+                        </p>
+                        <p class="text-muted small fw-bold mt-2">
+                            **Disclaimer:** This website and all its content (including company names, testimonials, and pricing) are for **educational and portfolio purposes only** and represent a conceptual project. It is not a real service and has no commercial function.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <!-- <button type="button" class="btn btn-primary position-relative">
-            Inbox
-        </button> -->
-
-          
-          <!-- <ul>
-            <li><a href="#tab1" class="tab-link" data-tab="tab1">Tab 1</a></li>
-            <li><a href="#tab2" class="tab-link" data-tab="tab2">Tab 2</a></li> <li><a href="#tab3" class="tab-link" data-tab="tab3">Tab 3</a></li>
-          </ul>
-          
-          <div id="tab1" class="tab-content active">Content for Tab 1.</div>
-          <div id="tab2" class="tab-content hidden">Content for Tab 2.</div>
-          <div id="tab3" class="tab-content hidden">Content for Tab 3.</div> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./custom.js"></script>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+    <script src="./assets/js/custom.js" defer></script>
 </body>
 </html>

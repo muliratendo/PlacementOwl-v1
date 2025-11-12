@@ -36,14 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Scroll Progress Bar
-window.addEventListener('scroll', () => {
-  const scrollTop = document.documentElement.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  const scrolled = (scrollTop / scrollHeight) * 100;
-  document.getElementById('scrollProgress').style.width = scrolled + '%';
-});
-
 // Smooth Scrolling for Anchor Links
 document.addEventListener('DOMContentLoaded', function() {
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
@@ -64,3 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Script to dynamically insert the current year for the copyright notice
+document.getElementById('currentYear').textContent = new Date().getFullYear();

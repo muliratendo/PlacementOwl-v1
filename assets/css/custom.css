@@ -61,17 +61,4 @@
     justify-content: center;
     flex-direction: column;
 }
-
-.progress {
-    z-index: 1050;
-    height: 4px;
-    width: 100%;
-    background-color: transparent;
-}
-
-.progress-bar {
-    transition: width 0.25s ease-out;
-    width: 0%;
-    background-color: #1e90ff;
-}
   
